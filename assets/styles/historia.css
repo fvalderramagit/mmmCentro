@@ -1,0 +1,186 @@
+*{
+	box-sizing: border-box;
+}
+body{
+   
+}
+
+.timeline{
+	width: 100%;
+	float: left;
+}
+.timeline h2{
+	margin:0;
+    font-size: 2em;
+    color: #2d3436;
+	text-align: center;
+	padding:2em 2em 3em 2em;
+    text-shadow: 2px 3px #f5f6fa;
+    font-family: 'Raleway', sans-serif;
+}
+.timeline .container{
+	max-width: 1170px;
+	margin:50px auto;
+}
+.timeline .container::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.timeline .content{
+	width: 100%;
+	float: left;
+}
+
+
+.timeline .content ul{
+	list-style: none;
+	margin:0;
+	padding:0px;
+	position: relative;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.timeline .content ul::before{
+	content: '';
+	position: absolute;
+	left:50%;
+	width: 2px;
+	margin-left:-1px;
+	height: 100%;
+	background-color: #c4c4c4;
+}
+.timeline .content ul li{
+	position: relative;
+	padding:30px 40px;
+	width: 50%;
+	display: block;
+	clear: both;
+}
+.timeline .content ul li::before{
+	content: '';
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background-color:#34495e;
+	top:30px;
+	margin-left: -8px;
+	box-shadow: 0 0 0 3px rgba(220, 221, 225,1.0);
+}
+.timeline .content ul li:nth-child(odd)::before{
+	left:100%;
+}
+.timeline .content ul li:nth-child(even)::before{
+	left:0%;
+}
+
+.timeline .content ul li:nth-child(odd){
+	float: left;
+	text-align: right;
+}
+.timeline .content ul li:nth-child(even){
+	float: right;
+	text-align: left;
+}
+
+.timeline .content ul li h3{
+	margin:0;
+}
+.timeline .content ul li p{
+	margin:0px;
+	padding:15px 0px; 
+	line-height: 22px;
+}
+
+.timeline .content ul li .time{
+	position: absolute;
+	padding:10px 20px;
+	min-width: 140px;
+	text-align: center;
+	background-color: #0156d7;
+	-webkit-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 3px 0px rgba(0,0,0,0.75); 
+	color:#ffffff;
+	font-size:1em;
+	border-radius:4px;
+	top:20px;
+	display: inline-block;
+}
+
+.timeline .content ul li:nth-child(odd) .time{
+   left:100%;
+ margin-left: 40px;
+}
+.timeline .content ul li:nth-child(even) .time{
+	right:100%;
+	margin-right: 40px;
+}
+
+
+
+.imgQuiensomos img{
+    opacity: .9;
+    border-radius: 50% !important;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 1000px)
+{
+    .timeline{
+        width: 100%;
+    }
+}
+
+/*responsive*/
+
+@media(max-width: 767px){
+    
+    h1
+    {
+        text-align: center;
+        font-size: 1.7em !important;
+        padding: 0 20;
+    }
+    
+	.timeline .content ul::before{
+		left:30px;
+	}
+	.timeline .content ul li{
+		width: 100%;
+	}
+	.timeline .content ul li:nth-child(odd){
+		text-align: left;
+	}
+	.timeline .content ul li:nth-child(odd)::before{
+		left:30px;
+	}
+	.timeline .content ul li:nth-child(even)::before{
+		left:30px;
+	}
+ 
+ .timeline .content ul li {
+    position: relative;
+    padding: 20px 30px 20px 60px;
+ }
+ .timeline .content ul li h3{
+ 	padding-top: 20px;
+ }
+ .timeline .content ul li .time{
+ 	position: relative;
+ 	top: auto;
+ }
+ .timeline .content ul li:nth-child(odd) .time{
+ 	left:0px;
+ 	margin-left:0px;
+ }
+ .timeline .content ul li:nth-child(even) .time{
+ 	left:0px;
+ 	right: auto;
+ 	margin-right:0px;
+
+ }
+}

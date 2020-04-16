@@ -1,0 +1,329 @@
+@import url(media%20query.css);
+:root{
+    --dark: #1e272e;
+    --white: #ffffff;
+    --light-grey: #efefef;
+    --gold: #f1c40f;
+    --orange: #eb4d4b;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+/****************************************/
+/***************** NAVBAR ***************/
+/****************************************/
+
+.navbar-toggler-icon{
+    color: white !important;
+}
+
+.navbar{
+    min-height: 5rem;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2.5px;
+}
+
+.nav-link:hover{
+    background-color: var(--gold) !important;
+    color: var(--dark) !important;
+    /*border-bottom: solid var(--white) 1px;*/
+}
+
+.dropdown-menu{
+    /*background-color: var(--dark) !important;*/
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-menu a{
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 2.5px;
+}
+
+.dropdown-menu a:hover{
+    background-color: var(--gold) !important;
+    color: var(--dark) !important;
+}
+
+.navbar-light .navbar-brand{
+    color:var(--gold);
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;/*grosor del texto*/
+    letter-spacing: 2px;
+}
+
+.icon:hover{
+    color:#fff !important;
+}
+
+.fondo1{
+    height: 400px;
+    background-color: red;
+}
+
+.fondo2{
+    height: 400px;
+    background-color: yellow;
+}
+.fondo3{
+    height: 400px;
+    background-color: blue;
+}
+
+.text-gold{
+    color: var(--gold) !important;
+}
+
+/************************************************/
+/*** clase que cambia el navbar al dar scroll ***/
+/************************************************/
+.bg-cambio{
+    background-color: var(--dark);
+    min-height: 4rem;
+}
+
+/************************************************/
+/****************** FIN NAVBAR ******************/
+/************************************************/
+
+
+
+/************************************************/
+/********************* HEADER *******************/
+/************************************************/
+.main-header{
+    background: url(../img/jumbotrom1.jpg)  center center no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.titulo h1{
+    font-family: 'Anton', sans-serif !important;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.titulo p{
+    letter-spacing: 4px;
+}
+
+.background-overlay{
+    background: rgba(30, 39, 46,.6);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/************************************************/
+/******************* FIN HEADER *****************/
+/************************************************/
+
+/************************************************/
+/******************* CARRUSEL *****************/
+/************************************************/
+
+.carousel-inner img{
+    height:75vh !important;
+    width: 100%;
+}
+/************************************************/
+/***************** FIN CARRUSEL *****************/
+/************************************************/
+
+/************************************************/
+/***************** SECTION 2 *****************/
+/************************************************/
+
+.section2{
+    height: auto;
+}
+.section2 p{
+    padding-top: 1em;
+    font-size: 2em;
+    letter-spacing: 4px;
+    color: #7f8c8d;
+}
+
+.section2 hr{
+    width: 10%;
+    background-color: #bdc3c7;
+}
+
+
+/************************************************/
+/************** FIN SECTION 2 *****************/
+/************************************************/
+
+
+/************************************************/
+/******************* HORARIOS *******************/
+/************************************************/
+.horarios{
+    padding: 4em 0 0 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.horarios p{
+    padding: 0.25em 0 0.25em 6px;
+    border-left: 1px solid #34495e;
+    text-align: left;
+    margin-left:  5em;
+    letter-spacing: 2px;
+    color: #34495e;
+    
+}
+
+.btnAccePort{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 3em;
+    
+    padding: 5px 2em;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    background-color: beige;
+    color: black;
+}
+/************************************************/
+/*************** FIN HORARIOS *******************/
+/************************************************/
+
+
+/************************************************/
+/******************* UBICACION ******************/
+/************************************************/
+
+/************************************************/
+/***************** FIN UBICACION ****************/
+/************************************************/
+
+/************************************************/
+/******************** DIRECTIVAS ****************/
+/************************************************/
+
+.directivas{
+    width: 100%;
+    height: auto;
+}
+
+.directivas{
+    padding:  10em 0;
+}
+
+.row-encabezado, .row-contenido{
+    /*border: solid 1px black;*/
+    padding:0.5em 2em 2em 2em; 
+}
+
+.col-contenido{
+    padding: 2em;
+    /*border: solid 1px black;*/
+}
+
+.directivas img{
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    opacity: .8;
+}
+
+.directivas img:hover{
+    opacity: 0.9;
+}
+
+.col-contenido, .row-encabezado p{
+    font-size: 1.25em;
+}
+
+/************************************************/
+/****************** FIN DIRECTIVAS **************/
+/************************************************/
+
+
+/************************************************/
+/********************** EVENTOS *****************/
+/************************************************/
+.eventos{
+    padding:  8em 0;
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+        
+.swiper-container {
+    width: 100%;
+    padding-top: 10em;
+    padding-bottom: 3em ;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 380px;
+    background: #fff;
+}
+
+.swiper-slide .imgBx{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.swiper-slide .imgBx img{
+    width: 100%;
+}
+
+.swiper-slide .details{
+    box-sizing: border-box;
+    padding: 1.em;
+}
+
+.swiper-slide .details h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5em;
+}
+/************************************************/
+/****************** FIN EVENTOS *****************/
+/************************************************/
+
+
+.section3{
+    width: 100%;
+    height: auto;
+    padding: 3em 0;
+    
+
+}

@@ -1,0 +1,300 @@
+@import url(mediaquery.css);
+:root{
+    --dark: #1e272e;
+    --white: #ffffff;
+    --light-grey: #efefef;
+    --gold: #f1c40f;
+    --orange: #eb4d4b;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+/****************************************/
+/***************** NAVBAR ***************/
+/****************************************/
+
+.navbar-toggler-icon{
+    color: white !important;
+}
+
+.navbar{
+    min-height: 5rem;
+}
+
+.nav-link {
+    color: var(--dark);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.80em;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover{
+    background-color: var(--gold) !important;
+    color: var(--dark) !important;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-menu a{
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 0.80em;
+    font-weight: bold;    
+    letter-spacing: 2.5px;
+}
+
+.dropdown-menu a:hover{
+    background-color: var(--gold) !important;
+    color: var(--dark) !important;
+}
+
+.navbar-light .navbar-brand{
+    color:var(--gold);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;/*grosor del texto*/
+}
+
+.navbar-light .navbar-brand:hover{
+    color:var(--gold) !important;
+}
+
+.icon:hover{
+    color:#fff !important;
+}
+
+.text-gold{
+    color: var(--gold) !important;
+}
+
+/************************************************/
+/*** clase que cambia el navbar al dar scroll ***/
+/************************************************/
+.bg-cambio{
+    background-color: #f1f2f6;
+    min-height: 4rem;
+    /*opacity: .9;*/
+}
+/************************************************/
+/****************** FIN NAVBAR ******************/
+/************************************************/
+
+
+
+
+
+/****************************************/
+/**************** SOCIAL BAR ************/
+/****************************************/
+.socialBar{
+    position: fixed;
+    left: 0.5%;
+    top: 40%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+.socialIcono{
+    color: white;
+    text-decoration: none;
+    padding: .6rem;
+    display: flex;
+    transition: all .5s;
+    border-radius: 8px 0 8px 0 ;
+}
+
+.fa-facebook-square{
+    background: #385998;
+}
+
+.fa-youtube-square{
+    background: #EA3516;
+}
+
+.fa-instagram-square{
+    background: #C3E0FB;
+}
+
+.fa-twitter-square{
+    background: #1DA1F2;
+}
+
+.socialIcono:hover{
+    padding-left: 2.5rem;
+    border-radius: 8px 0 8px 0 ;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42)
+}
+/****************************************/
+/************ FIN SOCIAL BAR ************/
+/****************************************/
+
+
+
+/************************************************/
+/**************** VOLVER A INICIO ***************/
+/************************************************/
+.simplescrollup__button {
+    position: fixed;
+    bottom: .5rem;
+    right: 3rem;
+    transition: 1s all;
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1B1464;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    opacity: .6;
+}
+.simplescrollup__button--show {
+    transform: translateX(40px);
+}
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}
+/************************************************/
+/************ FIN VOLVER A INICIO ***************/
+/************************************************/
+
+
+
+
+
+/**** MEDIA QUERY PARA MOVIL ******/
+@media(min-width: 360px)and (max-width: 575.98px){
+
+    .section2 p{
+        font-size: 1.25em;
+        color: #353b48;
+    }
+
+    .section2 hr{
+        width: 20%;
+        background-color: #bdc3c7;
+    }
+
+    .horarios h3{
+           font-size: 1.4em; 
+        }
+
+    .horarios h5{
+           font-size: 1.2em; 
+        }
+
+    .horarios p{
+        border: none;
+    }
+
+    .background-overlay{
+        background: rgba(55, 66, 250,.6);
+        height: 40vh !important;
+        width: 100%;
+    }
+
+    .ubicacion h2{
+        font-size: 25px;
+    }
+
+    .ubiP{
+        padding-top: 1.25em;
+        font-size:3em !important;
+        opacity: .3;
+    }
+
+    .titulo{
+        text-align: center !important;
+    }
+
+    .titulo h2{
+        font-family: 'Anton', sans-serif !important;
+        font-size: 3em !important;
+        text-transform: uppercase;
+    }
+
+    .titulo p{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 0.5em;
+        font-size: 3em !important;
+        line-height: .40em;
+        text-transform: uppercase;
+    }
+    
+/*************** ESCUELA DOMINICAL ************/
+    
+    
+    .quienSomos h3{
+    font-size: 2.5em;
+    margin-top: .25em !important;
+}
+    .quienSomos .col-md-3{
+    padding: 3em;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center;
+}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .background-overlay{
+        height: 60vh;
+        width: 100%;
+    }
+
+    .ubicacion h2{
+        font-size: 2em;
+    }
+
+    .ubiP{
+        /*font-size: 15vw;*/
+        padding-top: 2px;
+        height: auto;
+        font-size: 6em;
+        opacity: .3;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .background-overlay{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .ubicacion h2{
+        font-size: 2em;
+    }
+
+    .ubiP{
+        /*font-size: 15vw;*/
+        padding-top: 2px;
+        height: auto;
+        font-size: 60em;
+        opacity: .3;
+    }
+
+}
+
+
+
+

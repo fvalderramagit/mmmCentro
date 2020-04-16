@@ -1,0 +1,178 @@
+/************************************************/
+/********************* HEADER *******************/
+/************************************************/
+.main-header{
+    background: url(../img/escuelaDominical/bannerNinos.jpg)  center center no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
+
+.titulo{
+    text-align: left;
+   
+    padding-top: 4em;
+}
+.titulo h2{
+    margin-bottom: -0.4em;
+    font-size: 6em;
+    font-weight: unset;
+    text-transform: uppercase;
+}
+
+.titulo p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.5em;
+    font-size: 6em;
+    line-height: .40em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+.background-overlay-escuelaDominical{
+    background: rgba(30, 39, 46,.6);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/************************************************/
+/******************* FIN HEADER *****************/
+/************************************************/
+
+
+/************************************************/
+/******************* MISION-VISION **************/
+/************************************************/
+.quienSomos{
+    width: 100%;
+    height: auto;
+    padding: 2em 0;  
+}
+
+.quienSomos .row{
+    padding: 2em 0;
+}
+
+.quienSomos h2{
+    color: #00C4B4;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3em;
+}
+
+.quienSomos h3{
+    font-size: 2.5em;
+    margin-top: -1.5em;
+}
+
+.quienSomos .col-md-3{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienSomos .col-md-9{
+    padding: 0 1em;
+    text-align: justify;
+}
+
+.quienSomos hr{
+    border: none;
+    height: 2px;
+    width: 15%;
+    background-color: #bdc3c7;
+}
+
+.vision{
+    background-color: #00C4B4;
+}
+
+.vision h2{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3em;
+}
+
+.vision p{
+    color: white;
+    
+}
+/************************************************/
+/***************** FIN MISION-VISION ************/
+/************************************************/
+
+
+.multimedia{
+    background-color:#00C4B4;
+    padding: 4em;
+    color: white;
+}
+
+.card{
+  position: relative;
+}
+
+.card i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 1.5em;
+  height:1.5em;
+  text-align: center;
+  line-height: 70px;
+  background-color: #000;
+  color: #fff;
+  font-size: 45px;
+  opacity: .6;
+}
+
+.multimedia p{
+  margin-top: 4px;
+  padding:0.5em 0 0 0.5em;
+  color: white;
+  font-family: 'Gochi Hand', cursive;
+  background-color: black;
+}
+
+.multimedia h2{
+    padding-bottom: 2em;
+}
+
+
+/************************************************/
+/******************** FOOTER ********************/
+/************************************************/
+.footer{
+    margin-top: 0.5em;
+    width: 100%;
+    height: auto;
+    padding: 0.5em;
+    background-color: #00C4B4;
+    color: white; 
+}
+
+.footer h5{
+    padding: 1em;
+}
+
+.footer a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1em;
+    background-color: #10ac84;
+    border: none;
+}
+/************************************************/
+/***************** FIN FOOTER *******************/
+/************************************************/
+      
